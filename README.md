@@ -57,6 +57,8 @@ Teams can register via the form. Their details are processed by a custom submit 
 There is a handler that receives the message, and adds the Team and Member items to the relevant Hackathon Event as a child item.
 The new items are added to the "Team Workflow" and are set to Awaiting Approval. Approval of the Team will publish the Team and child Member items.
 
+4. Profit!
+![image.png](image.png?raw=true "Screenshot")
 
 ## Technical hurdles encountered
 - Creation of a new Rebus messaging table was limited by *messaginguser* not having SQL Create Table privileges
