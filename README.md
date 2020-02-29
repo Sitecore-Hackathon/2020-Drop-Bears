@@ -1,5 +1,16 @@
 ![Hackathon Logo](documentation/images/hackathon.png?raw=true "Hackathon Logo")
 
+# Installation instructions
+
+As we are using custom messaging on the Sitecore service bus via Rebus, the messaging user must be allowed to create tables (for the queue) and allowed access to the appropriate schema.
+```
+USE ****_messaging
+GRANT CREATE TABLE TO [messaginguser]
+GRANT ALTER ON SCHEMA::dbo TO [messaginguser];
+GO
+```
+
+
 # Submission Boilerplate
 
 Welcome to Sitecore Hackathon 2020.
