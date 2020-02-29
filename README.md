@@ -2,7 +2,7 @@
 
 # Drop Bears Hackathon Website
 
-For our submission we have chosed to build the Sitecore Hackathon Website project.
+For our submission we have chosen to build the Sitecore Hackathon Website project.
 This project has the following features:
  - Ability to register via Sitecore Experience Forms
  - Use of workflow for moderation and approvals
