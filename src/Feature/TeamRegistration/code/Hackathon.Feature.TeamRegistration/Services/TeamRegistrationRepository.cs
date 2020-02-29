@@ -2,6 +2,7 @@
 using Hackathon.Feature.TeamRegistration.Models;
 using Sitecore.Data.Items;
 using Hackathon.Feature.TeamRegistration.Helpers;
+using Sitecore.DependencyInjection;
 
 namespace Hackathon.Feature.TeamRegistration.Services
 {
@@ -11,6 +12,11 @@ namespace Hackathon.Feature.TeamRegistration.Services
         const string _participantTemplate = "{52DBE4B0-A6C2-45CC-A574-E10CEDEC3D65}";
 
         private readonly IMessageBus<RegistrationMessageBus> messageBus;
+        public TeamRegistrationRepository()
+        {   
+            this.messageBus = (IMessageBus<RegistrationMessageBus>)ServiceLocator.ServiceProvider.GetService(typeof(IMessageBus<RegistrationMessageBus>));
+        }
+
         public TeamRegistrationRepository(IMessageBus<RegistrationMessageBus> messageBus)
         {
             this.messageBus = messageBus;
