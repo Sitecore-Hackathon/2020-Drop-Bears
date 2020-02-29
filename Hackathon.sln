@@ -29,7 +29,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Feature.PageConte
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Project.Website.Master", "src\Project\Website\serialization\Hackathon.Project.Website.Master\Hackathon.Project.Website.Master.scproj", "{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Project.Website.Content.Master", "Hackathon.Project.Website.Content.Master\Hackathon.Project.Website.Content.Master.scproj", "{7FDC8E57-C216-4CC1-9110-F559AA1B144D}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Project.Website.Content.Master", "src\Project\Website\serialization\Hackathon.Project.Website.Content.Master\Hackathon.Project.Website.Content.Master.scproj", "{7FDC8E57-C216-4CC1-9110-F559AA1B144D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{CEFB4A82-131E-439D-AE6F-37E76904C82C}"
 	ProjectSection(SolutionItems) = preProject
