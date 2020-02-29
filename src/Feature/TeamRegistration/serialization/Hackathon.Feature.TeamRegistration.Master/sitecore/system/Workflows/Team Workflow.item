@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {3247B40E-0249-457F-BD4C-2D1A0126DEE2}
+database: master
+path: /sitecore/system/Workflows/Team Workflow
+parent: {05592656-56D7-4D85-AACF-30919EE494F9}
+name: Team Workflow
+master: {00000000-0000-0000-0000-000000000000}
+template: {1C0ACC50-37BE-4742-B43C-96A07A7410A5}
+templatekey: Workflow
+
+----field----
+field: {B5166B38-E4BF-4410-953C-2037F2BF6A56}
+name: Initial state
+key: initial state
+content-length: 38
+
+{A6250290-4FB3-4D60-8CD2-CE1D17A47FEA}
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{4B7E2DA9-DE43-4C83-88C3-02F042031D04}
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 72e9675b-e057-4958-b04e-814baa8da108
+
+----field----
+field: {591F16DA-4020-4FFD-9560-EF4996FC2A61}
+name: Default Comment Dialog Height
+key: default comment dialog height
+content-length: 3
+
+250
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20140202T234746Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+72e9675b-e057-4958-b04e-814baa8da108
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T081917Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
