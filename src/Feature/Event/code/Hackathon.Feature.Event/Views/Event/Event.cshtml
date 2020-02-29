@@ -4,9 +4,26 @@
 
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@{
-    var x = 1;
+<div id="event-details">
+    <h2>Event details</h2>
+    <div>
+        Event Name: @Html.Sitecore().Field("Event Name")
+    </div>
 
-}
+    <div>
+        Description: @Html.Sitecore().Field("Description")
+    </div>
 
-<h1>djfbhaskhjfhbhdf</h1>
+    <div>
+        Topics: @Html.Sitecore().Field("Topics")
+    </div>
+
+    <div>
+        Starts: @Html.Sitecore().Field("Start Date")
+        Ends: @Html.Sitecore().Field("End Date")
+    </div>
+
+    <div>
+        Hashtags: @Html.Sitecore().Field("Hashtags")
+    </div>
+</div>
