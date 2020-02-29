@@ -12,15 +12,10 @@ namespace Hackathon.Feature.Event.Controllers
         // GET: Default
         public ActionResult List()
         {
-            var render = new Sitecore.Mvc.Presentation.RenderingModel();
             var item = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item;
-
-            var db = Sitecore.Context.ContentDatabase;
-
-            //var teams = db.GetItem(itemId);
-            //var teamList = teams.GetChildren();           
-
-            return null;
+            var teamList = item.Children;
+            Team
+            return View();
         }
     }
 }

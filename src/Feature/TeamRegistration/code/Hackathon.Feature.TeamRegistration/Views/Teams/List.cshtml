@@ -1,0 +1,25 @@
+﻿@using Hackathon.Feature.TeamRegistration.Models;
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using System.Collections.Generic;
+@model List<Team>
+
+<section class="page-section bg-primary" id="teams">
+    <div class="container">
+        <h2>Teams</h2>
+        @foreach (var team in Model)
+        {
+            <h3>@team.TeamName</h3>
+            <p>@team.Slogan</p>
+            <p>@team.RepositoryUrl</p>
+            <p>@team.RepositoryName</p>
+            <div>
+                <h4>Team members:</h4>
+                @foreach (var member in team.Members)
+                {
+                    @member.Name
+                }
+            </div>
+        }
+    </div>
+</section>
