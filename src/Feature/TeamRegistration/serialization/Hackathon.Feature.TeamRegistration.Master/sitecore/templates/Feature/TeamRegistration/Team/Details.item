@@ -1,18 +1,18 @@
 ----item----
 version: 1
-id: {A9A1AB7C-F1BE-48E2-AF0C-2F051EAA73BA}
+id: {0B1BED4B-4700-4E6B-B34F-A7B83CD2F4E8}
 database: master
-path: /sitecore/content/Tenant
-parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
-name: Tenant
+path: /sitecore/templates/Feature/TeamRegistration/Team/Details
+parent: {1D23F767-F6F3-464B-99C9-28307D7B27D5}
+name: Details
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
 ----version----
 language: en
 version: 1
-revision: b7b20282-7f4d-4f6a-a4a1-05d2e83e4ac8
+revision: 20845830-e013-45dd-a6b5-7bba9fb871a1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,21 +20,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20200229T031034Z
+20200229T073119Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b7b20282-7f4d-4f6a-a4a1-05d2e83e4ac8
+20845830-e013-45dd-a6b5-7bba9fb871a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T031051Z
+20200229T074904Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

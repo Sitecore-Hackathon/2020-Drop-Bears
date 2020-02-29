@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {4C80292B-2A28-4DA3-BC61-99E4650DC329}
+database: master
+path: /sitecore/content/Events
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Events
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADA07637-7D61-4774-8120-DA814435F039}
+templatekey: Standard Page
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1A7EC4FD-CCB3-4C34-BBDD-C7C66F8ECF17}
+----version----
+language: en
+version: 1
+revision: 97324376-5420-49a3-bac5-09e1b52bf030
+
+----field----
+field: {6F09ADF7-77EE-4CB8-B140-9B459D7DFE2A}
+name: Heading
+key: heading
+content-length: 17
+
+New Standard Page
+----field----
+field: {A71E7066-2F03-49A0-999E-F26C6544F7E5}
+name: Title
+key: title
+content-length: 17
+
+New Standard Page
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T074930Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+97324376-5420-49a3-bac5-09e1b52bf030
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T074958Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
