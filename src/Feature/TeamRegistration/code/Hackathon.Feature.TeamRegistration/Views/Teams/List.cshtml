@@ -11,14 +11,17 @@
         {
             <h3>@team.TeamName</h3>
             <p>@team.Slogan</p>
-            <p>@team.RepositoryUrl</p>
-            <p>@team.RepositoryName</p>
+            <p></p>
+            <p>Code: <a style="color: yellow;" href="@team.RepositoryUrl" target="_blank">@team.RepositoryName</a></p>
             <div>
                 <h4>Team members:</h4>
-                @foreach (var member in team.Members)
-                {
-                    @member.Name
-                }
+                <ul>
+                    @foreach (var member in team.Members)
+                    {
+
+                        <li>@member.Name (<a style="color: yellow; font-size: 12px;" href="@member.Github">github</a>, <a style="color: yellow; font-size: 12px;" href="@member.Twitter">twitter</a>)</li>
+                    }
+                </ul>
             </div>
         }
     </div>

@@ -22,6 +22,7 @@ namespace Hackathon.Feature.TeamRegistration.Controllers
                 var team = new Team();
                 
                 team.TeamName = teamItem?.Fields["Team Name"]?.Value;
+                team.Slogan = teamItem?.Fields["Slogan"]?.Value;
                 team.RepositoryName = teamItem?.Fields["Repository Name"]?.Value;
                 team.RepositoryUrl = teamItem?.Fields["Repository Url"]?.Value;
                 team.Members = new List<Participant>();
