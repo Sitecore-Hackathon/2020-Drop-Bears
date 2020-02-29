@@ -26,20 +26,20 @@ namespace Hackathon.Feature.TeamRegistration.Controllers
             viewModel.Event.Hashtags = hashTagList;
 
             var startDate = item?.Fields["Start Date"]?.Value;
-            viewModel.Event.StartDate = Convert.ToDateTime(startDate);
+            viewModel.Event.StartDate = Sitecore.DateUtil.IsoDateToDateTime(startDate);
 
             var endDate = item?.Fields["End Date"]?.Value;
-            viewModel.Event.EndDate = Convert.ToDateTime(endDate);
+            viewModel.Event.EndDate = Sitecore.DateUtil.IsoDateToDateTime(endDate);
 
             var topics = item?.Fields["Topics"]?.Value;
             var topicDate = item?.Fields["Topic Release Date"].ToString();
             if(!string.IsNullOrEmpty(topics) || !string.IsNullOrEmpty(topicDate))
             {
-                viewModel.Event.TopicReleaseDate = Convert.ToDateTime(topicDate);
-                var topicRelease = Convert.ToDateTime(topicDate);
+                viewModel.Event.TopicReleaseDate = Sitecore.DateUtil.IsoDateToDateTime(topicDate);
+                var topicRelease = Sitecore.DateUtil.IsoDateToDateTime(topicDate);
                 if(topicRelease != null)
                 {
-                    if(topicRelease >= DateTime.UtcNow)
+                    if(topicRelease <= DateTime.UtcNow)
                     {
                         viewModel.TopicReady = true;
                         viewModel.Event.Topics = topics;

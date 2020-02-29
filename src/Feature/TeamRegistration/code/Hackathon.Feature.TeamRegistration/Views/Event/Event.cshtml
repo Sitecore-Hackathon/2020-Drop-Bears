@@ -13,13 +13,13 @@
             <p>Topics will be released on @Model.Event.TopicReleaseDate</p>
         } else
         {
-            <p>The topic is:@Model.Event.Topics</p>
+            <p>This hackathon's topic is: @Model.Event.Topics</p>
         }
 
         @foreach (var hash in Model.Event.Hashtags)
         {
             var url = "https://twitter.com/search?q=" + hash.Replace("#", "%23");
-            <span><a target="_blank" style="color:white;" href="@url">@hash</a> </span>
+            <span><a target="_blank" style="color:yellow;" href="@url">@hash</a> </span>
         }
 
 </div>
