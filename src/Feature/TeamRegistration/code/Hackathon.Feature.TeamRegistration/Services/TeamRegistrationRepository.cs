@@ -1,6 +1,7 @@
 ﻿using Sitecore.Framework.Messaging;
 using Hackathon.Feature.TeamRegistration.Models;
 using Sitecore.Data.Items;
+using Hackathon.Feature.TeamRegistration.Helpers;
 
 namespace Hackathon.Feature.TeamRegistration.Services
 {
@@ -25,14 +26,14 @@ namespace Hackathon.Feature.TeamRegistration.Services
             Sitecore.Data.Database masterDB = Sitecore.Configuration.Factory.GetDatabase("master");
 
 
-            var eventItemName = Sitecore.Data.Items.ItemUtil.ProposeValidItemName(registration.Event.Name, registration.Event.Name);
+            var eventItemName = StringHelpers.CleanEventName(registration.Event.Name);
             Item eventItem = masterDB.GetItem($"/sitecore/content/Events/{eventItemName}");
            
             var teamTemplate = masterDB.GetTemplate(_teamTemplate);
 
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
-                var teamItemName = Sitecore.Data.Items.ItemUtil.ProposeValidItemName(registration.Team.TeamName, registration.Team.TeamName);
+                var teamItemName = StringHelpers.CleanTeamName(registration.Team.TeamName);
                 Item teamItem = eventItem.Add(teamItemName, teamTemplate);
                 if (teamItem != null)
                 {
@@ -46,8 +47,10 @@ namespace Hackathon.Feature.TeamRegistration.Services
                 var memberTemplate = masterDB.GetTemplate(_participantTemplate);
                 foreach (Participant member in registration.Team.Members)
                 {
-                    Item participantItem  = teamItem.Add(member.Name, memberTemplate);
+                    var participantItemName = StringHelpers.CleanParticipantName(member.Name);
+                    Item participantItem  = teamItem.Add(participantItemName, memberTemplate);
                     participantItem.Editing.BeginEdit();
+                    participantItem["Participant Name"] = member.Name;
                     participantItem["Email"] = member.Email;
                     participantItem["Github"] = member.Github;
                     participantItem["LinkedIn"] = member.LinkedIn;
