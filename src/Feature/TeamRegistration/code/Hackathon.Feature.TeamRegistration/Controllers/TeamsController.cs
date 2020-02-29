@@ -31,13 +31,13 @@ namespace Hackathon.Feature.TeamRegistration.Controllers
                 {
                     var member = new Participant()
                     {
-                        Name = teamItem?.Fields["Participant Name"]?.Value,
-                        Email = teamItem?.Fields["Email"]?.Value,
-                        Twitter = teamItem?.Fields["Twitter"]?.Value,
-                        LinkedIn = teamItem?.Fields["LinkedIn"]?.Value,
-                        Slack = teamItem?.Fields["Slack"]?.Value,
-                        Github = teamItem?.Fields["Github"]?.Value,
-                        Location = teamItem?.Fields["Location"]?.Value
+                        Name = memberItem?.Fields["Participant Name"]?.Value,
+                        Email = memberItem?.Fields["Email"]?.Value,
+                        Twitter = memberItem?.Fields["Twitter"]?.Value,
+                        LinkedIn = memberItem?.Fields["LinkedIn"]?.Value,
+                        Slack = memberItem?.Fields["Slack"]?.Value,
+                        Github = memberItem?.Fields["Github"]?.Value,
+                        Location = memberItem?.Fields["Location"]?.Value
                     };
                     team.Members.Add(member);
                 }
