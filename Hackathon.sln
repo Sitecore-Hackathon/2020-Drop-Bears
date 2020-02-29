@@ -29,6 +29,13 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Feature.PageConte
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Project.Website.Master", "src\Project\Website\serialization\Hackathon.Project.Website.Master\Hackathon.Project.Website.Master.scproj", "{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Project.Website.Content.Master", "Hackathon.Project.Website.Content.Master\Hackathon.Project.Website.Content.Master.scproj", "{7FDC8E57-C216-4CC1-9110-F559AA1B144D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{CEFB4A82-131E-439D-AE6F-37E76904C82C}"
+	ProjectSection(SolutionItems) = preProject
+		TdsGlobal.config.user = TdsGlobal.config.user
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +70,12 @@ Global
 		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +91,7 @@ Global
 		{79079A6E-ACFB-405E-B133-3F68ECC7E474} = {597F4705-5DA1-4A81-A768-EA0B17CB3A1A}
 		{8714DD3D-0616-434B-B916-6A2347B85B34} = {597F4705-5DA1-4A81-A768-EA0B17CB3A1A}
 		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734} = {AA08DE47-BCD7-4BF1-9636-B68A7CE335A4}
+		{7FDC8E57-C216-4CC1-9110-F559AA1B144D} = {AA08DE47-BCD7-4BF1-9636-B68A7CE335A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF9DE425-1CD7-4FF6-9A9B-F943BAF2C000}
