@@ -18,6 +18,7 @@ namespace Hackathon.Feature.TeamRegistration.Controllers
             var viewModel = new EventViewModel();
             var item = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item;
 
+            viewModel.Event = new Event();
             viewModel.Event.Name = item?.Fields["Event Name"]?.Value;
             viewModel.Event.Description = item?.Fields["Description"]?.Value;
 
