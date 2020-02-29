@@ -428,6 +428,10 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Teams\List.cshtml" />
+    <None Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Event\Event.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

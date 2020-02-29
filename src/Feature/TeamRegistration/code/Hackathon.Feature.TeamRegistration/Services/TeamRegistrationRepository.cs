@@ -3,6 +3,7 @@ using Hackathon.Feature.TeamRegistration.Models;
 using Sitecore.Data.Items;
 using Hackathon.Feature.TeamRegistration.Helpers;
 using Sitecore.DependencyInjection;
+using Sitecore.Workflows;
 
 namespace Hackathon.Feature.TeamRegistration.Services
 {
@@ -10,6 +11,7 @@ namespace Hackathon.Feature.TeamRegistration.Services
     {
         const string _teamTemplate = "{1D23F767-F6F3-464B-99C9-28307D7B27D5}";
         const string _participantTemplate = "{52DBE4B0-A6C2-45CC-A574-E10CEDEC3D65}";
+        const string _workflowID = "{3247B40E-0249-457F-BD4C-2D1A0126DEE2}";
 
         private readonly IMessageBus<RegistrationMessageBus> messageBus;
         public TeamRegistrationRepository()
@@ -48,6 +50,9 @@ namespace Hackathon.Feature.TeamRegistration.Services
                     teamItem["Slogan"] = registration.Team.Slogan;
                     teamItem["Repository Name"] = registration.Team.RepositoryName;
                     teamItem["Repository Url"] = registration.Team.RepositoryUrl;
+                    teamItem.Fields[Sitecore.FieldIDs.Workflow].Value = _workflowID;
+                    IWorkflow wf = masterDB.WorkflowProvider.GetWorkflow(_workflowID);
+                    wf.Start(teamItem);
                     teamItem.Editing.EndEdit();
                 }
                 var memberTemplate = masterDB.GetTemplate(_participantTemplate);

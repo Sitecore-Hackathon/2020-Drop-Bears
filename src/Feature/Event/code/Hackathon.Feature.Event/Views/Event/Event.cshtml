@@ -1,0 +1,29 @@
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions;
+@using Sitecore.ExperienceForms.Mvc.Html
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div id="event-details">
+    <h2>Event details</h2>
+    <div>
+        Event Name: @Html.Sitecore().Field("Event Name")
+    </div>
+
+    <div>
+        Description: @Html.Sitecore().Field("Description")
+    </div>
+
+    <div>
+        Topics: @Html.Sitecore().Field("Topics")
+    </div>
+
+    <div>
+        Starts: @Html.Sitecore().Field("Start Date")
+        Ends: @Html.Sitecore().Field("End Date")
+    </div>
+
+    <div>
+        Hashtags: @Html.Sitecore().Field("Hashtags")
+    </div>
+</div>

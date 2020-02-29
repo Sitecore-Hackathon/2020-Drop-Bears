@@ -6,8 +6,8 @@ path: /sitecore/content/Events/Hackathon 2020
 parent: {4C80292B-2A28-4DA3-BC61-99E4650DC329}
 name: Hackathon 2020
 master: {00000000-0000-0000-0000-000000000000}
-template: {1A7EC4FD-CCB3-4C34-BBDD-C7C66F8ECF17}
-templatekey: _Event
+template: {618AF872-4F74-49B4-B982-439EB9206D0D}
+templatekey: Event
 
 ----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
@@ -16,17 +16,10 @@ key: __masters
 content-length: 38
 
 {1D23F767-F6F3-464B-99C9-28307D7B27D5}
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 307
-
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{90ADA079-97E8-47D7-9191-76DDC4CFEF63}"><r ds="{847C56EF-4794-4776-901B-2CB457460623}" id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}" par="" ph="phContent" uid="{CB37A511-11A7-4282-850A-DB9E467D6BAA}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: 8c725ce4-66d4-4e06-8efc-cf916f07c197
+revision: 6324a33c-c546-4970-a2c8-089d5cd1d5ac
 
 ----field----
 field: {2184933B-592A-461B-971F-8E98AF555C67}
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c725ce4-66d4-4e06-8efc-cf916f07c197
+6324a33c-c546-4970-a2c8-089d5cd1d5ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T104550Z
+20200229T134659Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
