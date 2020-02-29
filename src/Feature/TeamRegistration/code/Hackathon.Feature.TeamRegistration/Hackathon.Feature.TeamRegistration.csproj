@@ -381,7 +381,7 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Participant.cs" />
     <Compile Include="Models\Registration.cs" />
-    <Compile Include="Models\RegistrationMessageBus.cs" />
+    <Compile Include="RegistrationMessageBus.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Pipelines\InitializeTeamRegistrationMessageBus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

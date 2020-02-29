@@ -13,7 +13,7 @@ namespace Hackathon.Feature.TeamRegistration.Pipelines
         }
         public void Process(PipelineArgs args)
         {
-            this.serviceProvider.StartMessageBus();
+            this.serviceProvider.StartMessageBus<RegistrationMessageBus>();
         }
     }
 }
