@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HBFWeb.Project.Website")]
-[assembly: AssemblyDescription("HBFWeb.Project.Website")]
+[assembly: AssemblyTitle("Hackathon2020.Project.Website")]
+[assembly: AssemblyDescription("Hackathon2020.Project.Website")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HBF Health Ltd")]
-[assembly: AssemblyProduct("HBFWeb.Project.Website")]
-[assembly: AssemblyCopyright("Copyright © HBF Health Ltd 2020")]
+[assembly: AssemblyCompany("Hackathon2020 DB Ltd")]
+[assembly: AssemblyProduct("Hackathon2020.Project.Website")]
+[assembly: AssemblyCopyright("Copyright © Hackathon2020 DB Ltd 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
