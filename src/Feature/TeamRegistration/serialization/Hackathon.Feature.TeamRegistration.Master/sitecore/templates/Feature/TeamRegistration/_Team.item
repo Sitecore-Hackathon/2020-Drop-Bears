@@ -23,10 +23,17 @@ key: __standard values
 content-length: 38
 
 {4974534D-D4CF-4932-A123-2C576BE5C17E}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 23
+
+People/16x16/users3.png
 ----version----
 language: en
 version: 1
-revision: b1bab0e7-bae6-4404-adb9-f991b8537813
+revision: d145f514-2d0c-44f2-988b-8e626fd76067
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b1bab0e7-bae6-4404-adb9-f991b8537813
+d145f514-2d0c-44f2-988b-8e626fd76067
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T093625Z
+20200229T141555Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
