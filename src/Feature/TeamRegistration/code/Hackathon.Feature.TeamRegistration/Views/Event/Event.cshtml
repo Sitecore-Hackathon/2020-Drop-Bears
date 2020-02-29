@@ -1,29 +1,25 @@
+@using Hackathon.Feature.TeamRegistration.Models.ViewModel;
+@using Sitecore.Mvc.Presentation
 @using Sitecore.Mvc
-@using Sitecore.Mvc.Analytics.Extensions;
-@using Sitecore.ExperienceForms.Mvc.Html
-
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using System.Collections.Generic;
+@model EventViewModel
 
 <div id="event-details">
-    <h2>Event details</h2>
-    <div>
-        Event Name: @Html.Sitecore().Field("Event Name")
-    </div>
+        <h1>@Model.Event.Name</h1>
+        <p>@Model.Event.Description</p>
 
-    <div>
-        Description: @Html.Sitecore().Field("Description")
-    </div>
+        @if (!Model.TopicReady)
+        {
+            <p>Topics will be released on @Model.Event.TopicReleaseDate</p>
+        } else
+        {
+            <p>The topic is:@Model.Event.Topics</p>
+        }
 
-    <div>
-        Topics: @Html.Sitecore().Field("Topics")
-    </div>
+        @foreach (var hash in Model.Event.Hashtags)
+        {
+            var url = "https://twitter.com/search?q=" + hash.Replace("#", "%23");
+            <span><a target="_blank" style="color:white;" href="@url">@hash</a> </span>
+        }
 
-    <div>
-        Starts: @Html.Sitecore().Field("Start Date")
-        Ends: @Html.Sitecore().Field("End Date")
-    </div>
-
-    <div>
-        Hashtags: @Html.Sitecore().Field("Hashtags")
-    </div>
 </div>

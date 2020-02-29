@@ -439,6 +439,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\TeamsController.cs" />
     <Compile Include="DI\TeamRegistrationServicesConfigurator.cs" />
     <Compile Include="Helpers\FormFieldHelper.cs" />
@@ -446,6 +447,7 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Participant.cs" />
     <Compile Include="Models\Registration.cs" />
+    <Compile Include="Models\ViewModel\EventViewModel.cs" />
     <Compile Include="RegistrationMessageBus.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Pipelines\InitializeTeamRegistrationMessageBus.cs" />
