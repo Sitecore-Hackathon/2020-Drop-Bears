@@ -21,6 +21,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Foundation.Dictio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Navigation", "src\Feature\Navigation\code\Hackathon.Feature.Navigation\Hackathon.Feature.Navigation.csproj", "{F2724779-E2FD-41F3-8B0B-9BB756615CCF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PageContent", "PageContent", "{597F4705-5DA1-4A81-A768-EA0B17CB3A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.PageContent", "src\Feature\PageContent\code\Hackathon.Feature.PageContent\Hackathon.Feature.PageContent.csproj", "{79079A6E-ACFB-405E-B133-3F68ECC7E474}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Feature.PageContent.Master", "src\Feature\PageContent\serialization\Hackathon.Feature.PageContent.Master\Hackathon.Feature.PageContent.Master.scproj", "{8714DD3D-0616-434B-B916-6A2347B85B34}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Hackathon.Project.Website.Master", "src\Project\Website\serialization\Hackathon.Project.Website.Master\Hackathon.Project.Website.Master.scproj", "{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +47,22 @@ Global
 		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79079A6E-ACFB-405E-B133-3F68ECC7E474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79079A6E-ACFB-405E-B133-3F68ECC7E474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79079A6E-ACFB-405E-B133-3F68ECC7E474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79079A6E-ACFB-405E-B133-3F68ECC7E474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8714DD3D-0616-434B-B916-6A2347B85B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8714DD3D-0616-434B-B916-6A2347B85B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8714DD3D-0616-434B-B916-6A2347B85B34}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8714DD3D-0616-434B-B916-6A2347B85B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8714DD3D-0616-434B-B916-6A2347B85B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8714DD3D-0616-434B-B916-6A2347B85B34}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +74,10 @@ Global
 		{FAAF5FF9-567B-405F-9E6D-131D7B396E4E} = {AA08DE47-BCD7-4BF1-9636-B68A7CE335A4}
 		{4E3B6340-C1EB-4A54-A66C-05438EC8107B} = {1C369326-FF72-4FAE-A7E4-54BD0F965B4E}
 		{F2724779-E2FD-41F3-8B0B-9BB756615CCF} = {3E3795DE-4699-4084-91D9-1305B78E1D75}
+		{597F4705-5DA1-4A81-A768-EA0B17CB3A1A} = {11EF8E9D-E260-4F2A-93D8-1217511F9FCC}
+		{79079A6E-ACFB-405E-B133-3F68ECC7E474} = {597F4705-5DA1-4A81-A768-EA0B17CB3A1A}
+		{8714DD3D-0616-434B-B916-6A2347B85B34} = {597F4705-5DA1-4A81-A768-EA0B17CB3A1A}
+		{7BDA01B4-1B84-4E70-B1F9-664E95E7A734} = {AA08DE47-BCD7-4BF1-9636-B68A7CE335A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF9DE425-1CD7-4FF6-9A9B-F943BAF2C000}
