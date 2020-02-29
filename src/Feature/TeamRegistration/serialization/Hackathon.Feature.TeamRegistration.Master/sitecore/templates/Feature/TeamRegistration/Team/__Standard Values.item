@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {4974534D-D4CF-4932-A123-2C576BE5C17E}
+database: master
+path: /sitecore/templates/Feature/TeamRegistration/Team/__Standard Values
+parent: {1D23F767-F6F3-464B-99C9-28307D7B27D5}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {1D23F767-F6F3-464B-99C9-28307D7B27D5}
+templatekey: Team
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{52DBE4B0-A6C2-45CC-A574-E10CEDEC3D65}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{3247B40E-0249-457F-BD4C-2D1A0126DEE2}
+----version----
+language: en
+version: 1
+revision: 240b2266-4515-4e75-99a9-ff5f21bc655b
+
+----field----
+field: {49C1298F-F982-450E-AFD5-CD38529CB225}
+name: Team Name
+key: team name
+content-length: 5
+
+$name
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T082252Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+240b2266-4515-4e75-99a9-ff5f21bc655b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T083242Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{A6250290-4FB3-4D60-8CD2-CE1D17A47FEA}

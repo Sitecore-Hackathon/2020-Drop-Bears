@@ -1,33 +1,26 @@
 ----item----
 version: 1
-id: {E97457AE-333C-4011-BAA6-D5B86752B90E}
+id: {2C5BF143-5D2A-413F-88E7-8E82F2F2AE3A}
 database: master
-path: /sitecore/content/Teams
-parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
-name: Teams
+path: /sitecore/content/Events/Hackathon 2020/DropBears
+parent: {03CEA5BB-E841-4B37-A508-FF6861EEF44D}
+name: DropBears
 master: {00000000-0000-0000-0000-000000000000}
-template: {ADA07637-7D61-4774-8120-DA814435F039}
-templatekey: Standard Page
+template: {1D23F767-F6F3-464B-99C9-28307D7B27D5}
+templatekey: Team
 
 ----version----
 language: en
 version: 1
-revision: 33fe1191-2140-4c82-a51b-a1703805a024
+revision: df94bbfa-bdb9-4137-ae6f-0b067cbf9b45
 
 ----field----
-field: {6F09ADF7-77EE-4CB8-B140-9B459D7DFE2A}
-name: Heading
-key: heading
-content-length: 5
+field: {49C1298F-F982-450E-AFD5-CD38529CB225}
+name: Team Name
+key: team name
+content-length: 9
 
-Teams
-----field----
-field: {A71E7066-2F03-49A0-999E-F26C6544F7E5}
-name: Title
-key: title
-content-length: 5
-
-Teams
+DropBears
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20200229T031124Z
+20200229T073847Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-33fe1191-2140-4c82-a51b-a1703805a024
+df94bbfa-bdb9-4137-ae6f-0b067cbf9b45
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T055156Z
+20200229T082631Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
