@@ -1,14 +1,50 @@
 ![Hackathon Logo](documentation/images/hackathon.png?raw=true "Hackathon Logo")
 
-# Installation instructions
+# Drop Bears Hackathon Website
 
-As we are using custom messaging on the Sitecore service bus via Rebus, the messaging user must be allowed to create tables (for the queue) and allowed access to the appropriate schema.
+For our submission we have chosed to build the Sitecore Hackathon Website project.
+This project has the following features:
+ - Ability to reqister via Sitecore Experience Forms
+ - Use of workflow for moderation and approvals
+ - Dynamic listing of Teams and Team Members
+
+## Technical overview
+
+The project uses a number of features of Sitecore:
+- Sitecore Experience Forms
+- Custom submit action to put items on a Rebus queue
+- Transfer of data to Master database via Rebus message handler
+- Automatic enrolment in workflow with publish on approval
+
+## Installation instructions
+
+**IMPORTANT!**
+As we are using custom messaging on the Sitecore service bus via Rebus, the messaging user must be allowed to create tables (for the queue) and allowed access to the appropriate schema. This is really only required on the first run in a new environment, as no further tables are created after that.
+
+1. Update SQL privileges for *messaginguser*
 ```
 USE ****_messaging
-GRANT CREATE TABLE TO [messaginguser]
+GRANT CREATE TABLE TO [messaginguser];
 GRANT ALTER ON SCHEMA::dbo TO [messaginguser];
 GO
 ```
+
+2. Deploy TDS items
+In the following order, push Sitecore items from the solution to your site using TDS-
+- Hackathon.Feature.PageContent.Master
+- Hackathon.Feature.TeamRegistration.Master
+- Hackathon.Project.Website.Master
+- Hackathon.Project.Website.Content.Master
+
+3. Publish the following web projects from the solution
+- Hackathon.Feature.PageContent
+- Hackathon.Feature.TeamRegistration
+- Hackathon.Project.Website
+
+
+## Technical hurdles encountered
+- Creation of new Rebus table limited by *messaginguser* not having SQL Create Table privileges
+- No ability to add hidden input field to Sitecore Forms. This was desirable so that the form could pass through the Hackathon item ID and thus have new Teams and Members added to the correct Hackathon event
 
 
 # Submission Boilerplate

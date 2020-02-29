@@ -14,6 +14,7 @@ namespace Hackathon.Feature.TeamRegistration
     public class SubmitRegistrationToQueue : SubmitActionBase<string>
     {
         private TeamRegistrationRepository _registrationRepository;
+        const string _githubUrl = "https://github.com";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SubmitRegistrationToQueue"/> class.
@@ -49,19 +50,28 @@ namespace Hackathon.Feature.TeamRegistration
         protected override bool Execute(string data, FormSubmitContext formSubmitContext)
         {
             Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
-
-
-            //TODO: create object based on form fields.
+            
             var formHelper = new FormFieldHelper(formSubmitContext);
 
-            //MOCK out the object
+            //This is gross. 🤮
+            var eventField = formSubmitContext.Fields.FirstOrDefault(f => f.Name.Equals("Event"));
+            var eventName = ((IEnumerable<string>)eventField
+                .GetType()
+                .GetProperty("Value")?
+                .GetValue(eventField, null)).FirstOrDefault();
+
+            if (eventName == null)
+                return false;
+
+            var teamName = formHelper.GetFieldValue("TeamName");
             var registration = new Registration()
             {
-                Event = new Event() { Name = "Hackathon 2020" },
-                Team = new Team() { RepositoryName = formHelper.GetFieldValue("TeamRepoName"),
-                    RepositoryUrl = formHelper.GetFieldValue("TeamRepoLink"),
+                Event = new Event() { Name = eventName.ToString() },
+                Team = new Team() {
+                    //EG: https://github.com/Sitecore-Hackathon/2020-Drop-Bears
+                    RepositoryUrl = $"{_githubUrl}/{StringHelpers.CleanTeamName(eventName.ToString())}/{StringHelpers.CleanTeamName(teamName)}",
                     Slogan = formHelper.GetFieldValue("TeamSlogan"),
-                    TeamName = formHelper.GetFieldValue("TeamName"),
+                    TeamName = teamName,
                     Members = new List<Participant>()
 
                 }

@@ -12,6 +12,7 @@ namespace Hackathon.Feature.TeamRegistration.Services
         const string _teamTemplate = "{1D23F767-F6F3-464B-99C9-28307D7B27D5}";
         const string _participantTemplate = "{52DBE4B0-A6C2-45CC-A574-E10CEDEC3D65}";
         const string _workflowID = "{3247B40E-0249-457F-BD4C-2D1A0126DEE2}";
+        const string eventsPath = "/sitecore/content/Events/";
 
         private readonly IMessageBus<RegistrationMessageBus> messageBus;
         public TeamRegistrationRepository()
@@ -29,19 +30,26 @@ namespace Hackathon.Feature.TeamRegistration.Services
         }
 
         public virtual void CreateItem(Registration registration)
-        {
-            //TODO: Un-hardcode the things.  Branch template?
+        {   
             Sitecore.Data.Database masterDB = Sitecore.Configuration.Factory.GetDatabase("master");
-
-
+            
             var eventItemName = StringHelpers.CleanEventName(registration.Event.Name);
-            Item eventItem = masterDB.GetItem($"/sitecore/content/Events/{eventItemName}");
+            Item eventItem = masterDB.GetItem($"{eventsPath}{eventItemName}");
+            if (eventItem == null)
+                return;
            
             var teamTemplate = masterDB.GetTemplate(_teamTemplate);
 
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
                 var teamItemName = StringHelpers.CleanTeamName(registration.Team.TeamName);
+
+                //No dupes pls.
+                if (masterDB.GetItem($"{eventsPath}{eventItemName}/{teamItemName}") != null)
+                {
+                    teamItemName = StringHelpers.CleanTeamName($"{System.Guid.NewGuid().ToString()}_{teamItemName}");
+                }
+
                 Item teamItem = eventItem.Add(teamItemName, teamTemplate);
                 if (teamItem != null)
                 {
