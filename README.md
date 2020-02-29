@@ -63,6 +63,7 @@ The new items are added to the "Team Workflow" and are set to Awaiting Approval.
 - No ability to add hidden input field to Sitecore Forms. This was desirable so that the form could pass through the Hackathon item ID and thus have new Teams and Members added to the correct Hackathon event. To work around this we created a Sitecore Form template that can be used as a template for the a new form to be added to each new Hackathon event.
 
 ## Things we would do if we had more time
+- Make it look pretty
 - Addition of team members to xDB as Contacts
 - Dynamic enrolment in Marketing Automation plans
 - Use of EXM and Marketing Automation to manage the enrolment process and to send alerts at key dates (2 weeks before, 1 week before, etc)
