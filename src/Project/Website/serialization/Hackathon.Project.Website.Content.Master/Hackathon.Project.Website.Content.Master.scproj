@@ -38,6 +38,11 @@
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.item"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\content\Events.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Events\Hackathon 2019.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Events\Hackathon 2019\Flamin Galahs.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Events\Hackathon 2019\Flamin Galahs\Andy Parry.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Events\Hackathon 2019\Flamin Galahs\George Tucker.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Events\Hackathon 2019\Flamin Galahs\Tezz Mulkearns.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\content\Events\Hackathon 2020.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\content\Events\Hackathon 2020\DropBears.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\content\Events\Hackathon 2020\DropBears\Andy Parry.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
