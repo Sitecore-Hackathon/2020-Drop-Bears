@@ -631,9 +631,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Views\Layouts\Index.cshtml">
+    <Content Include="Views\Layouts\Index.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
