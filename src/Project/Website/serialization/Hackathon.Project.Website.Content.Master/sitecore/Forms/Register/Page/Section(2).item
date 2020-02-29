@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {21886027-9728-4083-BA7E-6451F5AE5328}
+database: master
+path: /sitecore/Forms/Register/Page/Section(2)
+parent: {D56265A3-05E9-44BF-9553-C0E8931CC406}
+name: Section(2)
+master: {00000000-0000-0000-0000-000000000000}
+template: {8CDDB194-F456-4A75-89B7-346F8F39F95C}
+templatekey: Section
+
+----field----
+field: {84ECE662-5034-40CB-9C60-744DB64BB294}
+name: Field Key
+key: field key
+content-length: 32
+
+017454AA3CB44B85A4A2E0108FCE6A34
+----field----
+field: {71C6DE8E-4718-4977-B83E-B49552EE14B0}
+name: Conditions
+key: conditions
+content-length: 22
+
+{"fieldConditions":[]}
+----version----
+language: en
+version: 1
+revision: 88ca32d7-1749-4e15-8c82-8037b9c70614
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200229T092803Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+88ca32d7-1749-4e15-8c82-8037b9c70614
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200229T093620Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
