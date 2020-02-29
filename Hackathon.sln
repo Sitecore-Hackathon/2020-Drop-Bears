@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{E25EA5AF-E5AC-4AFE-96E5-3D21160DBBEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{44699C56-35D4-4569-8E7D-4E9CA1336A25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{11EF8E9D-E260-4F2A-93D8-1217511F9FCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{3E3795DE-4699-4084-91D9-1305B78E1D75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionary", "Dictionary", "{1C369326-FF72-4FAE-A7E4-54BD0F965B4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{AA08DE47-BCD7-4BF1-9636-B68A7CE335A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Project.Website", "src\Project\Website\code\Hackathon.Project.Website\Hackathon.Project.Website.csproj", "{FAAF5FF9-567B-405F-9E6D-131D7B396E4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Foundation.Dictionary", "src\Foundation\Dictionary\code\Hackathon.Foundation.Dictionary\Hackathon.Foundation.Dictionary.csproj", "{4E3B6340-C1EB-4A54-A66C-05438EC8107B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Navigation", "src\Feature\Navigation\code\Hackathon.Feature.Navigation\Hackathon.Feature.Navigation.csproj", "{F2724779-E2FD-41F3-8B0B-9BB756615CCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAAF5FF9-567B-405F-9E6D-131D7B396E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAF5FF9-567B-405F-9E6D-131D7B396E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAF5FF9-567B-405F-9E6D-131D7B396E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAF5FF9-567B-405F-9E6D-131D7B396E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3B6340-C1EB-4A54-A66C-05438EC8107B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3B6340-C1EB-4A54-A66C-05438EC8107B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3B6340-C1EB-4A54-A66C-05438EC8107B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3B6340-C1EB-4A54-A66C-05438EC8107B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2724779-E2FD-41F3-8B0B-9BB756615CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E3795DE-4699-4084-91D9-1305B78E1D75} = {11EF8E9D-E260-4F2A-93D8-1217511F9FCC}
+		{1C369326-FF72-4FAE-A7E4-54BD0F965B4E} = {E25EA5AF-E5AC-4AFE-96E5-3D21160DBBEF}
+		{AA08DE47-BCD7-4BF1-9636-B68A7CE335A4} = {44699C56-35D4-4569-8E7D-4E9CA1336A25}
+		{FAAF5FF9-567B-405F-9E6D-131D7B396E4E} = {AA08DE47-BCD7-4BF1-9636-B68A7CE335A4}
+		{4E3B6340-C1EB-4A54-A66C-05438EC8107B} = {1C369326-FF72-4FAE-A7E4-54BD0F965B4E}
+		{F2724779-E2FD-41F3-8B0B-9BB756615CCF} = {3E3795DE-4699-4084-91D9-1305B78E1D75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF9DE425-1CD7-4FF6-9A9B-F943BAF2C000}
+	EndGlobalSection
+EndGlobal
