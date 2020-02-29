@@ -1,40 +1,33 @@
 ----item----
 version: 1
-id: {03CEA5BB-E841-4B37-A508-FF6861EEF44D}
+id: {B701850A-CB8A-4943-B2BC-DDDB1238C103}
 database: master
-path: /sitecore/content/Events/Hackathon 2020
-parent: {4C80292B-2A28-4DA3-BC61-99E4650DC329}
-name: Hackathon 2020
+path: /sitecore/Forms
+parent: {11111111-1111-1111-1111-111111111111}
+name: Forms
 master: {00000000-0000-0000-0000-000000000000}
-template: {618AF872-4F74-49B4-B982-439EB9206D0D}
-templatekey: Event
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
 
 ----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 24
 
-{1D23F767-F6F3-464B-99C9-28307D7B27D5}
+Apps/32x32/Forms (1).png
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 186
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 117
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{ADD3E080-313F-4FAF-BDF4-2751886770C0}" s:ds="{676548AC-C65F-4285-9262-A92BF86AEBB4}" /></d></r>
+ar|sitecore\Forms Editor|pe|+item:read|+item:create|pd|+item:rename|+item:create|+item:delete|+item:read|+item:write|
 ----version----
 language: en
 version: 1
-revision: 5163b1aa-c5d6-45a1-9eb1-ee5f79993884
+revision: 57497915-ff0b-4279-9392-976c3c08f93e
 
-----field----
-field: {2184933B-592A-461B-971F-8E98AF555C67}
-name: Event Name
-key: event name
-content-length: 14
-
-Hackathon 2020
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20200229T075011Z
+20160718T133948Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5163b1aa-c5d6-45a1-9eb1-ee5f79993884
+57497915-ff0b-4279-9392-976c3c08f93e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T165125Z
+20190613T103045Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
