@@ -11,9 +11,9 @@ namespace Hackathon.Feature.TeamRegistration.Services
     public class TeamRegistrationHandler : IMessageHandler<Registration>
     {
         private readonly TeamRegistrationRepository repository;
-        public TeamRegistrationHandler(TeamRegistrationRepository repository)
+        public TeamRegistrationHandler()
         {
-            this.repository = repository;
+            this.repository = new TeamRegistrationRepository();
         }
         public Task Handle(Registration message, IMessageReceiveContext receiveContext, IMessageReplyContext replyContext)
         {   

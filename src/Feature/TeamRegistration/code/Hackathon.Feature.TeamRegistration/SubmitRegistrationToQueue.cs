@@ -18,9 +18,9 @@ namespace Hackathon.Feature.TeamRegistration
         /// Initializes a new instance of the <see cref="SubmitRegistrationToQueue"/> class.
         /// </summary>
         /// <param name="submitActionData">The submit action data.</param>
-        public SubmitRegistrationToQueue(ISubmitActionData submitActionData, TeamRegistrationRepository registrationRepository) : base(submitActionData)
+        public SubmitRegistrationToQueue(ISubmitActionData submitActionData) : base(submitActionData)
         {
-            _registrationRepository = registrationRepository;
+            _registrationRepository = new TeamRegistrationRepository();
         }
 
         /// <summary>
