@@ -32,7 +32,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	<includesetaclproviderondestination>False</includesetaclproviderondestination>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,7 +42,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	<includesetaclproviderondestination>False</includesetaclproviderondestination>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
@@ -623,6 +623,9 @@
     </Content>
     <Content Include="Views\FormBuilder\FieldTemplates\SingleLineText.cshtml" />
     <Content Include="Views\FormBuilder\FieldTemplates\MultipleLineText.cshtml" />
+    <Content Include="Views\Layouts\_Base.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
