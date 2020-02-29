@@ -23,10 +23,17 @@ key: __standard values
 content-length: 38
 
 {4CC8ECE1-2E16-45D3-A3EE-054F6DAEA609}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 26
+
+People/32x32/stopwatch.png
 ----version----
 language: en
 version: 1
-revision: 4cd9b3c5-a039-47dc-87f6-975a20746288
+revision: f19d209c-aa5a-45d5-a015-55b7955072aa
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4cd9b3c5-a039-47dc-87f6-975a20746288
+f19d209c-aa5a-45d5-a015-55b7955072aa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T093612Z
+20200229T141838Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

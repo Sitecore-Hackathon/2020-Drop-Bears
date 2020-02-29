@@ -16,10 +16,17 @@ key: __base template
 content-length: 38
 
 {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+People/16x16/dude3.png
 ----version----
 language: en
 version: 1
-revision: 22c8e4a4-aeed-4c81-a7b9-529ae6c4e4eb
+revision: f7166d07-6eb3-462c-b7a0-1a0f49d44d20
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-22c8e4a4-aeed-4c81-a7b9-529ae6c4e4eb
+f7166d07-6eb3-462c-b7a0-1a0f49d44d20
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T093619Z
+20200229T141540Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

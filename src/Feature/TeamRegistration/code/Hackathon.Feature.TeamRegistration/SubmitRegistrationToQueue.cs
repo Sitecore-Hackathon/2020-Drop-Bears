@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Hackathon.Feature.TeamRegistration.Helpers;
 using Hackathon.Feature.TeamRegistration.Models;
 using Hackathon.Feature.TeamRegistration.Services;
 using Sitecore.Diagnostics;
@@ -49,46 +50,39 @@ namespace Hackathon.Feature.TeamRegistration
         {
             Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
 
+
             //TODO: create object based on form fields.
-            //var blah = formSubmitContext.Fields["FirstName"];
+            var formHelper = new FormFieldHelper(formSubmitContext);
 
             //MOCK out the object
             var registration = new Registration()
             {
                 Event = new Event() { Name = "Hackathon 2020" },
-                Team = new Team() { RepositoryName = "DropBears",
-                    RepositoryUrl = "https://github.com/DropBears",
-                    Slogan = "Drop Bears will eat you alive!",
-                    TeamName = $"DropBears {System.Guid.NewGuid().ToString()}",
-                    Members = new List<Participant>() {  
-                        new Participant() {  Name = "George Tucker",
-                            Email = "gwdt@example.com",
-                            Github = "gwdt",
-                            LinkedIn = "gwdtucker",
-                            Location ="Perth, Australia",
-                            Slack = "gwdt",
-                            Twitter = "gwdt"
-                        },
-                        new Participant() {  Name = "Matthew Ellins",
-                            Email = "mellins@example.com",
-                            Github = "mellins",
-                            LinkedIn = "matt.ellins",
-                            Location ="Perth, Australia",
-                            Slack = "m.ellins",
-                            Twitter = "spyn"
-                        },
-                        new Participant() {  Name = "Andy Parry",
-                            Email = "aparry@example.com",
-                            Github = "aparry",
-                            LinkedIn = "andrewparry",
-                            Location ="Perth, Australia",
-                            Slack = "aparry",
-                            Twitter = "aparry"
-                        }
-                    }
-                },
+                Team = new Team() { RepositoryName = formHelper.GetFieldValue("TeamRepoName"),
+                    RepositoryUrl = formHelper.GetFieldValue("TeamRepoLink"),
+                    Slogan = formHelper.GetFieldValue("TeamSlogan"),
+                    TeamName = formHelper.GetFieldValue("TeamName"),
+                    Members = new List<Participant>()
+
+                }
 
             };
+
+            //Add members
+            for (int i=0;  i < formHelper.Count("Name"); i++)
+            {
+                registration.Team.Members.Add(
+                            new Participant()
+                            {
+                                Name = formHelper.GetFieldValue("Name",i),
+                                Email = formHelper.GetFieldValue("Email",i),
+                                Github = formHelper.GetFieldValue("Github", i),
+                                LinkedIn = formHelper.GetFieldValue("LinkedIn", i),
+                                Location = formHelper.GetFieldValue("Location", i),
+                                Slack = formHelper.GetFieldValue("Slack", i),
+                                Twitter = formHelper.GetFieldValue("Twitter", i)
+                            });
+            }
 
             if (!formSubmitContext.HasErrors)
             {
@@ -105,5 +99,6 @@ namespace Hackathon.Feature.TeamRegistration
             return true;
         }
 
+        
     }
 }
