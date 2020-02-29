@@ -9,17 +9,18 @@ namespace Hackathon.Feature.Event.Controllers
 {
     public class TeamsController : SitecoreController
     {
-        // GET: Lists
-        public ActionResult List(string itemId)
+        // GET: Default
+        public ActionResult List()
         {
-//            var render = new Sitecore.Mvc.Presentation.RenderingModel();
-//            var item = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item;
+            var render = new Sitecore.Mvc.Presentation.RenderingModel();
+            var item = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item;
 
-            var web = Sitecore.Configuration.Factory.GetDatabase("web");
-            var teams = web.GetItem(itemId);
-            var teamList = teams.GetChildren();           
+            var db = Sitecore.Context.ContentDatabase;
 
-            return View();
+            //var teams = db.GetItem(itemId);
+            //var teamList = teams.GetChildren();           
+
+            return null;
         }
     }
 }
