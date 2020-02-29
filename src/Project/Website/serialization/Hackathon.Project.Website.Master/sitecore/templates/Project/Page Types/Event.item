@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {ADA07637-7D61-4774-8120-DA814435F039}
+id: {618AF872-4F74-49B4-B982-439EB9206D0D}
 database: master
-path: /sitecore/templates/Project/Page Types/Standard Page
+path: /sitecore/templates/Project/Page Types/Event
 parent: {5FBE2BDD-AF5A-4E27-9026-46441B125260}
-name: Standard Page
+name: Event
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -13,20 +13,20 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 116
+content-length: 155
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{0BE18607-B17E-4A77-9E18-312A293A09D1}|{C2751CD5-A0A2-498C-9FCC-5B01403EFA28}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{0BE18607-B17E-4A77-9E18-312A293A09D1}|{C2751CD5-A0A2-498C-9FCC-5B01403EFA28}|{1A7EC4FD-CCB3-4C34-BBDD-C7C66F8ECF17}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
 key: __standard values
 content-length: 38
 
-{EF57B127-32EB-42C7-8880-B719CB6D7041}
+{C7BD1E26-3C16-4232-9E90-92DE8BF93EC9}
 ----version----
 language: en
 version: 1
-revision: 40927c93-9f90-4d6d-9bf0-023af3fdb309
+revision: 5ac2806c-dc52-4826-9bce-d3ad9c6f7533
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-40927c93-9f90-4d6d-9bf0-023af3fdb309
+5ac2806c-dc52-4826-9bce-d3ad9c6f7533
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20200229T054405Z
+20200229T093734Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
